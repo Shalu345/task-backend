@@ -10,6 +10,7 @@ const app = express();
 
 app.use(cors({
   origin: "https://appointment-management-system-ekbu.onrender.com",
+  methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
 app.use(express.json());
